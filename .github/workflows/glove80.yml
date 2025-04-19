@@ -1,0 +1,8 @@
+name: 'Build glove80'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["glove80_lh","glove80_rh"]'
